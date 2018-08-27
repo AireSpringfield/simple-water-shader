@@ -4,10 +4,10 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: c47f259af6097064aa090de0c9a108ed, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -46,6 +46,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 39fc719256f63fb419b14d6d086bcf3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,11 +58,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ReflectionEnv:
+        m_Texture: {fileID: 8900000, guid: 927f1165e7b6f7b49bf1f8dbf6ad7a9d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexFoam:
+        m_Texture: {fileID: 2800000, guid: ad3efdba02c81a34389622a3e43d1ef4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexNormal:
+        m_Texture: {fileID: 2800000, guid: f302d9753c69d9349a0380c2950369b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Extinction: 0.671
+    - _FoamDepthMax: 0.381
+    - _FoamDepthMin: 0.261
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -66,11 +85,32 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _R0: 0.33
+    - _RangeShore: 102
+    - _RefrScale: 0.0004
+    - _Shininess: 0.25
+    - _Smoothness: 0.76
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Steepness: 0
+    - _ThresDeepest: 0.586
     - _UVSec: 0
+    - _UnitPerUV: 100
+    - _UseDirectionalLight: 0
+    - _UseFiltering: 0
+    - _UseFoam: 0
+    - _UseMeanSky: 0
+    - _UsePhong: 0
+    - _WaveIntensity: 2
     - _ZWrite: 1
     m_Colors:
+    - _ColAmbient: {r: 1, g: 1, b: 1, a: 1}
+    - _ColDeep: {r: 0.0039, g: 0.00196, b: 0.145, a: 1}
+    - _ColDirectionalLight: {r: 1, g: 1, b: 1, a: 1}
+    - _ColShore: {r: 0.1477839, g: 0.764151, b: 0.5972891, a: 1}
+    - _ColSurface: {r: 0.45817018, g: 0.79497564, b: 0.8301887, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DirDirectionalLight: {r: 2, g: -1, b: 2, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _VecWind: {r: 1, g: 1, b: 0, a: 0}
