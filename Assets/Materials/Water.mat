@@ -63,11 +63,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexFoam:
-        m_Texture: {fileID: 2800000, guid: ad3efdba02c81a34389622a3e43d1ef4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2f3f3047979ef794f8083616220ea4b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexNormal:
-        m_Texture: {fileID: 2800000, guid: f302d9753c69d9349a0380c2950369b4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 39fc719256f63fb419b14d6d086bcf3b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -76,8 +76,8 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Extinction: 0.671
-    - _FoamDepthMax: 0.381
-    - _FoamDepthMin: 0.261
+    - _FoamDepthMax: 0.788
+    - _FoamDepthMin: 0.385
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -85,16 +85,16 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _R0: 0.33
+    - _R0: 0
     - _RangeShore: 102
-    - _RefrScale: 0.0004
-    - _Shininess: 0.25
+    - _RefrScale: 0.74
+    - _Shininess: 0.26
     - _Smoothness: 0.76
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Steepness: 0
-    - _ThresDeepest: 0.586
+    - _ThresDeepest: 0.6
     - _UVSec: 0
     - _UnitPerUV: 100
     - _UseDirectionalLight: 0
@@ -102,7 +102,7 @@ Material:
     - _UseFoam: 0
     - _UseMeanSky: 0
     - _UsePhong: 0
-    - _WaveIntensity: 2
+    - _WaveIntensity: 1.23
     - _ZWrite: 1
     m_Colors:
     - _ColAmbient: {r: 1, g: 1, b: 1, a: 1}

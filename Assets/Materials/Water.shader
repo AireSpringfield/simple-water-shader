@@ -1,10 +1,6 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/Water2"
+﻿Shader "Custom/Water"
 {
+
 	Properties
 	{
 
@@ -242,7 +238,6 @@ Shader "Custom/Water2"
 			half3 ColRefraction(half3 colUnderwater, float depth, float offshore, float cosTheta){
 			
 				half3 colLit = _ColDirectionalLight.rgb;
-
 				half3 colSurf = lerp(_ColShore, _ColSurface, offshore);
 				half3 colRefr = lerp(colUnderwater, colLit*normalize(colSurf), saturate(depth * _Extinction / (cosTheta * _Smoothness + 0.2	)));
 				colRefr = lerp(colRefr, _ColDeep * normalize(colSurf), depth*0.2);
@@ -269,7 +264,7 @@ Shader "Custom/Water2"
 				v2f.uv = a2v.uv; 
 				// Do not divide by w here, otherwise interpolated NDC will be distorted.
 				v2f.xyInRange0w = ComputeGrabScreenPos(v2f.posClip);  
-				v2f.depth = a2v.color.b;
+				v2f.depth = a2v.color.b	 	;
 
 
 				return v2f;
@@ -384,7 +379,7 @@ Shader "Custom/Water2"
 				//return float4(v2f.uv, 0, 1);
 				//return wavesIntensity;
 				//return float4(frac(uvWaves[2]), 0,1);
-					return float4(col, 1.0f);
+				return float4(col, 1.0f);
 			}
 			ENDCG
 		}
